@@ -18,7 +18,7 @@ class LinearRegression:
         self.learning_rate = learning_rate
         self.epochs = epochs
         self.coefficients = None
-        self.biase = 0.0 
+        self.bias = 0.0 
 
     def train(self,X,Y):
         n_samples, n_features = X.shape
@@ -37,10 +37,10 @@ class LinearRegression:
             b -= self.learning_rate*db
         
         self.coefficients = w 
-        self.biase = b 
+        self.bias = b 
 
     def predict(self,X):
-        return np.dot(X, self.coefficients) + self.biase
+        return np.dot(X, self.coefficients) + self.bias
     
     def evaluate(self,X,Y):
         y_bar = self.predict(X)
