@@ -2,6 +2,25 @@ import numpy as np
 import pandas as pd 
 
 class NaiveBayesClassifier:
+
+    """
+    Naive Bayes Classifier from Scratch (Multinomial Model)
+
+    This implementation supports:
+    - Classification of binary and multi-class datasets
+    - Uses logarithmic form of Bayes theorem for numerical stability
+    - Applies Laplace smoothing to avoid zero-probability issues
+
+    Key Components:
+    - train(X, y): Calculates class priors and feature likelihoods from training data
+    - predict(X): Returns predicted labels using MAP estimation
+    - evaluate(X, y): Computes classification accuracy on given test data
+
+    Assumptions:
+    - Features are non-negative (e.g. counts or binary presence/absence)
+    - Conditional independence between features given the class
+    """
+    
     def __init__(self):
         self.class_poiors ={}
         self.likelihoods = {}
