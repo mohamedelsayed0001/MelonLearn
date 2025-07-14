@@ -3,7 +3,21 @@ import pandas as pd
 from collections import deque
 
 class DBSCAN:
+    """
+    DBSCAN clustering algorithm (brute-force distance calculation)
 
+    Parameters:
+    -----------
+    eps : float
+        Maximum distance to consider a neighbor.
+    min_samples : int
+        Minimum number of neighbors to form a core point.
+
+    Attributes:
+    -----------
+    labels_ : ndarray
+        Cluster labels for each point (-1 for noise).
+    """
     def __init__(self , eqs = 0.5 , min_samples = 5):
         self.eqs = eqs
         self.min_samples = min_samples
