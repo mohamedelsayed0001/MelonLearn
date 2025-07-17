@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-class IQRAnomalyDetector:
+class IQR:
     """
     IQR-Based Anomaly Detection (Model-Free, Univariate)
 
