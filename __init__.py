@@ -1,2 +1,2 @@
-from .ML import Supervised, Regression
-from . import DL
+from .ML import *
+from .DL import *
