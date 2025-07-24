@@ -114,7 +114,7 @@ import melonlearn
  model = melonlearn. ... ()
 
 # model.train(X, y)
- model.fit(X, y)
+ model.train(X, y)
 
 # Make predictions
  predictions = model.predict(X_new)
