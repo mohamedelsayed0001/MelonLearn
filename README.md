@@ -2,11 +2,50 @@
 
 **MelonLearn** is an educational open-source machine learning and deep learning library, meticulously implemented from scratch using Python. This library aims to provide clear, understandable, and extensible implementations of various machine learning algorithms, making it an excellent resource for learning and experimentation.
 
----
 
-##  Features
+
+## 1. Features
 
 ### Machine Learning:
+- ### Supervised:
+    - #### Classification 
+        - Decision Tree 
+
+        - K-Nearest Neighbors (KNN) 
+
+        - Linear Support Vector Machine (LinearSVM) 
+
+        - Logistic Regression 
+
+        - Naive Bayes 
+
+        - Random Forest 
+
+        - Support Vector Machine (SVM) 
+    - #### Regression 
+        - Lasso Regression
+
+        - Linear Regression 
+
+        - Random Forest Regression 
+
+        - Regression Tree 
+
+        - Support Vector Regression (SVR) 
+- ### Unsupervised:
+    - #### AnomalyDetection
+        - IQR
+        - Isolation Froest 
+        - z-score
+    - #### Clustering
+        - DBscan
+        - PCA
+        - ICA
+        - K means
+    
+- ### Reinforcement
+    - Policy Optimization (PPO)
+    - Q - Learning
 
 ###  Deep Learning:
 - includes the following specific components:
@@ -40,9 +79,9 @@
 
 Additionally, there appears to be a `Sequential` module, which likely represents a Sequential model API for stacking layers.
 
----
 
-## 💡 Philosophy
+
+## 2. Philosophy
 
 MelonLearn is designed with a focus on:
 
@@ -51,9 +90,9 @@ MelonLearn is designed with a focus on:
 - **Experimentation**: Flexible framework to test algorithms and tune hyperparameters.  
 - **Educational Value**: Ideal for students, researchers, and developers who want to learn the core concepts of ML and DL.
 
----
 
-## 🔧 Getting Started
+
+## 3. Getting Started
 
 To clone and start using MelonLearn:
 
@@ -61,3 +100,25 @@ To clone and start using MelonLearn:
 git clone https://github.com/mohamedelsayed0001/MelonLearn.git
 cd MelonLearn
 ```
+Usage example 
+```python 
+import melonlearn
+
+# Load a dataset
+ X, y = ...
+
+# Initialize and train a model
+ model = melonlearn. ... ()
+
+# model.train(X, y)
+ model.fit(X, y)
+
+# Make predictions
+ predictions = model.predict(X_new)
+
+```
+## 4.  License
+ 
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+
