@@ -1,4 +1,7 @@
 # MelonLearn
+<p align="center">
+  <img src="MelonLearn.png" alt="MelonLearn" width="300"/>
+</p>
 
 **MelonLearn** is an educational open-source machine learning and deep learning library, meticulously implemented from scratch using Python. This library aims to provide clear, understandable, and extensible implementations of various machine learning algorithms, making it an excellent resource for learning and experimentation.
 
